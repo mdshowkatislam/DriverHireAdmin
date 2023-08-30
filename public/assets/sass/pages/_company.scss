@@ -1,0 +1,77 @@
+.company_table_wrapper {
+  .dropdown-toggle {
+    &::after {
+      display: none;
+    }
+  }
+
+  .dropdown-menu {
+    background: #ffffff;
+    border: 0.5px solid #3f80ea;
+    border-radius: 5px;
+  }
+
+  .search_form_wrapper {
+    position: absolute;
+    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    @include hover-transition();
+    width: 100%;
+    transform-origin: top center;
+    &.search_active {
+      position: static;
+      transform: scaleY(1);
+      -webkit-transform: scaleY(1);
+      -moz-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+      -o-transform: scaleY(1);
+    }
+  }
+
+  .search_form_area {
+    display: block;
+    @include min-media-width(768) {
+      max-width: 600px;
+      width: 100%;
+    }
+  }
+  .add_form_area {
+    @include min-media-width(768) {
+      max-width: 650px;
+      width: 100%;
+    }
+  }
+  .company_details_area {
+    @include min-media-width(768) {
+      padding-left: 20px;
+    }
+  }
+  .company_detials_item {
+    margin-top: 15px;
+    h4,
+    h5 {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      color: #1a1a1a;
+      a {
+        &:hover {
+          color: #1a1a1a;
+          opacity: 0.9;
+        }
+      }
+    }
+    h5 {
+      color: #9fa4a6;
+      a {
+        &:hover {
+          color: #9fa4a6;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}

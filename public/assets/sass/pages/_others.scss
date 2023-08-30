@@ -1,0 +1,149 @@
+.customer_chart_wrapper {
+  .header_area {
+    margin-bottom: 24px;
+  }
+
+  .customer_chart_area {
+    width: 100%;
+    height: 500px;
+  }
+}
+.task_page_wrapper {
+  .task_area {
+    .task_list_area {
+      .task_list {
+        grid-template-columns: repeat(1, minmax(0, 1fr)) minmax(0, 0.8fr);
+        padding: 15px 0;
+        margin-bottom: 0;
+        border-bottom: 1px solid #d7d7d7;
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+  .task_status_btn {
+    font-size: 14px;
+    font-weight: 600;
+    color: #131313;
+    background: #d7d7d7;
+    border-radius: 20px;
+    padding: 3px 10px;
+    &.task_status_approve {
+      color: white;
+      background: #8dc63f;
+    }
+  }
+  .task_chart_area {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+.user_profile_card {
+  .user_banner_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    background: rgb(225, 245, 254);
+    padding: 10px;
+  }
+  .profile_bg {
+    img {
+      width: 90px;
+    }
+  }
+  .user_info_area {
+    margin-top: -30px;
+  }
+  .user_profile_grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
+    gap: 20px 10px;
+    @include max-media-width(575) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .user_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    img {
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #131313;
+    margin-bottom: 5px;
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #131313;
+  }
+  .user_project_item {
+    text-align: center;
+  }
+}
+
+.personal_info_area {
+  p {
+    font-size: 14px;
+  }
+  .personal_info_list {
+    li {
+      display: grid;
+      grid-template-columns: minmax(0, 120px) repeat(1, minmax(0, 1fr));
+      align-items: center;
+      gap: 10px 20px;
+      padding: 10px 0;
+      border-bottom: 1px solid #d7d7d7;
+      @include max-media-width(575) {
+        grid-template-columns: minmax(0, 80px) repeat(1, minmax(0, 1fr));
+      }
+    }
+    h4 {
+      font-size: 16px;
+      font-weight: 400;
+      color: #131313;
+      a {
+        display: block;
+        width: 100%;
+        height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &:hover {
+          color: #131313;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+.monthly_earning_area {
+  .month_cart_area {
+    width: 100%;
+    height: 300px;
+  }
+}
+.revenue_earning_area {
+  .revenue_cart_area {
+    width: 100%;
+    height: 500px;
+  }
+}
